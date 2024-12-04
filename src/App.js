@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import WhatYouNeed from './components/WhatYouNeed.jsx';
+import img1 from './images/f3.png'
+import img2 from './images/f4.png'
+import img3 from './images/f5.png'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WhatYouNeed 
+    firstImage = {img1}
+    secondImage = {img2}
+    thirdImage = {img3}
+    ></WhatYouNeed>
   );
 }
 
